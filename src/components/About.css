@@ -1,5 +1,5 @@
 .about {
-  background-color: white;
+  background: linear-gradient(135deg, #0d0d0d 0%, #1a1a2e 100%);
 }
 
 .about-content {
@@ -26,25 +26,28 @@
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 255, 255, 0.1);
   transition: transform 0.3s ease;
 }
 
 .about-profile-image:hover {
   transform: scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 255, 255, 0.2);
 }
 
 .image-placeholder {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #f5f3ef 0%, #e8e4e0 100%);
+  background: linear-gradient(135deg, rgba(26, 26, 46, 0.8) 0%, rgba(13, 13, 13, 0.9) 100%);
   border-radius: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 255, 255, 0.1);
   position: relative;
   overflow: hidden;
+  border: 1px solid rgba(0, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
 }
 
 .image-placeholder::before {
@@ -54,13 +57,13 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, rgba(212, 196, 183, 0.1) 0%, rgba(212, 196, 183, 0.05) 100%);
+  background: linear-gradient(45deg, rgba(0, 255, 255, 0.1) 0%, rgba(0, 255, 255, 0.05) 100%);
   border-radius: 15px;
 }
 
 .placeholder-text {
   text-align: center;
-  color: #999;
+  color: #808080;
   z-index: 1;
 }
 
@@ -69,12 +72,12 @@
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: #666;
+  color: #b0b0b0;
 }
 
 .placeholder-text small {
   font-size: 0.85rem;
-  color: #999;
+  color: #808080;
 }
 
 .frame-accent {
@@ -83,9 +86,10 @@
   left: -10px;
   width: 100%;
   height: 100%;
-  border: 3px solid #d4c4b7;
+  border: 3px solid #00ffff;
   border-radius: 15px;
   z-index: -1;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
 }
 
 .about-text {
@@ -95,14 +99,14 @@
 .about-heading {
   font-size: 2rem;
   font-weight: 700;
-  color: #2d2d2d;
+  color: #ffffff;
   margin-bottom: 1.5rem;
   font-family: 'Playfair Display', serif;
 }
 
 .about-description {
   font-size: 1.1rem;
-  color: #666;
+  color: #b0b0b0;
   line-height: 1.7;
   margin-bottom: 2rem;
 }
@@ -125,15 +129,16 @@
   justify-content: center;
   width: 30px;
   height: 30px;
-  background-color: #d4c4b7;
-  color: white;
+  background-color: #00ffff;
+  color: #0d0d0d;
   border-radius: 50%;
   flex-shrink: 0;
   margin-top: 0.25rem;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
 }
 
 .point-text {
-  color: #2d2d2d;
+  color: #e0e0e0;
   font-size: 1rem;
   line-height: 1.6;
   margin: 0;
@@ -146,7 +151,7 @@
 .background-title {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #2d2d2d;
+  color: #ffffff;
   margin-bottom: 1.5rem;
   font-family: 'Playfair Display', serif;
 }
@@ -162,15 +167,19 @@
   align-items: flex-start;
   gap: 1rem;
   padding: 1rem;
-  background-color: #faf9f7;
+  background-color: rgba(26, 26, 46, 0.8);
   border-radius: 8px;
-  border-left: 4px solid #d4c4b7;
+  border-left: 4px solid #00ffff;
   transition: all 0.3s ease;
+  border: 1px solid rgba(0, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
 }
 
 .background-item:hover {
-  background-color: #f5f3ef;
+  background-color: rgba(13, 13, 13, 0.9);
   transform: translateX(5px);
+  border-color: rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
 }
 
 .item-icon {
@@ -179,14 +188,15 @@
   justify-content: center;
   width: 35px;
   height: 35px;
-  background-color: #d4c4b7;
-  color: white;
+  background-color: #00ffff;
+  color: #0d0d0d;
   border-radius: 8px;
   flex-shrink: 0;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
 }
 
 .item-text {
-  color: #2d2d2d;
+  color: #e0e0e0;
   font-size: 0.95rem;
   line-height: 1.5;
   margin: 0;

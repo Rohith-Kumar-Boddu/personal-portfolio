@@ -1,5 +1,5 @@
 .skills {
-  background-color: #faf9f7;
+  background: linear-gradient(135deg, #0d0d0d 0%, #1a1a2e 100%);
 }
 
 .skills-grid {
@@ -10,16 +10,19 @@
 }
 
 .skill-category {
-  background: white;
+  background: rgba(26, 26, 46, 0.8);
   padding: 2rem;
   border-radius: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
+  border: 1px solid rgba(0, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
 }
 
 .skill-category:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 255, 255, 0.1);
+  border-color: rgba(0, 255, 255, 0.2);
 }
 
 .category-header {
@@ -35,16 +38,17 @@
   justify-content: center;
   width: 50px;
   height: 50px;
-  background-color: #d4c4b7;
-  color: white;
+  background-color: #10b981;
+  color: #ffffff;
   border-radius: 12px;
   flex-shrink: 0;
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
 }
 
 .category-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #2d2d2d;
+  color: #ffffff;
   margin: 0;
   font-family: 'Playfair Display', serif;
 }
@@ -69,19 +73,19 @@
 .skill-name {
   font-size: 1rem;
   font-weight: 600;
-  color: #2d2d2d;
+  color: #e0e0e0;
 }
 
 .skill-level {
   font-size: 0.9rem;
   font-weight: 500;
-  color: #666;
+  color: #b0b0b0;
 }
 
 .skill-bar {
   width: 100%;
   height: 8px;
-  background-color: #f0f0f0;
+  background-color: rgba(13, 13, 13, 0.8);
   border-radius: 4px;
   overflow: hidden;
   position: relative;
@@ -89,9 +93,10 @@
 
 .skill-progress {
   height: 100%;
-  background: linear-gradient(90deg, #d4c4b7 0%, #c4b4a7 100%);
+  background: linear-gradient(90deg, #00ffff 0%, #00e6e6 100%);
   border-radius: 4px;
   position: relative;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
 }
 
 .skill-progress::after {
@@ -115,17 +120,19 @@
 }
 
 .skills-summary {
-  background: white;
+  background: rgba(26, 26, 46, 0.8);
   padding: 3rem;
   border-radius: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   text-align: center;
+  border: 1px solid rgba(0, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
 }
 
 .summary-title {
   font-size: 2rem;
   font-weight: 700;
-  color: #2d2d2d;
+  color: #ffffff;
   margin-bottom: 2rem;
   font-family: 'Playfair Display', serif;
 }
@@ -146,13 +153,14 @@
 .point-number {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #d4c4b7;
+  color: #10b981;
   font-family: 'Playfair Display', serif;
+  text-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
 }
 
 .point-text {
   font-size: 1rem;
-  color: #666;
+  color: #b0b0b0;
   font-weight: 500;
 }
 
