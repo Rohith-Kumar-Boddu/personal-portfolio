@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   padding-top: 80px;
-  background-color: #faf9f7;
+  background: linear-gradient(135deg, #0d0d0d 0%, #1a1a2e 100%);
   position: relative;
 }
 
@@ -23,14 +23,14 @@
 .hero-title {
   font-size: 3.5rem;
   font-weight: 700;
-  color: #2d2d2d;
+  color: #ffffff;
   margin-bottom: 1.5rem;
   line-height: 1.2;
   font-family: 'Playfair Display', serif;
 }
 
 .highlight {
-  color: #d4c4b7;
+  color: #00ffff;
   position: relative;
 }
 
@@ -41,10 +41,11 @@
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #d4c4b7;
+  background-color: #00ffff;
   transform: scaleX(0);
   transform-origin: left;
   animation: underline 1s ease-out 0.5s forwards;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
 }
 
 @keyframes underline {
@@ -55,14 +56,14 @@
 
 .hero-subtitle {
   font-size: 1.2rem;
-  color: #666;
+  color: #b0b0b0;
   margin-bottom: 2.5rem;
   line-height: 1.7;
   font-weight: 400;
 }
 
 .hero-subtitle strong {
-  color: #2d2d2d;
+  color: #ffffff;
   font-weight: 600;
 }
 
@@ -85,18 +86,20 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: white;
-  color: #2d2d2d;
+  background-color: rgba(26, 26, 46, 0.8);
+  color: #e0e0e0;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
 }
 
 .hero-social .social-link:hover {
-  background-color: #d4c4b7;
-  color: white;
+  background-color: #00ffff;
+  color: #0d0d0d;
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(212, 196, 183, 0.3);
+  box-shadow: 0 8px 25px rgba(0, 255, 255, 0.3), 0 0 20px rgba(0, 255, 255, 0.2);
 }
 
 .hero-image {
@@ -116,25 +119,28 @@
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 255, 255, 0.1);
   transition: transform 0.3s ease;
 }
 
 .hero-profile-image:hover {
   transform: scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 255, 255, 0.2);
 }
 
 .image-placeholder {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #f5f3ef 0%, #e8e4e0 100%);
+  background: linear-gradient(135deg, rgba(26, 26, 46, 0.8) 0%, rgba(13, 13, 13, 0.9) 100%);
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 255, 255, 0.1);
   position: relative;
   overflow: hidden;
+  border: 1px solid rgba(0, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
 }
 
 .image-placeholder::before {
@@ -144,13 +150,13 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, rgba(212, 196, 183, 0.1) 0%, rgba(212, 196, 183, 0.05) 100%);
+  background: linear-gradient(45deg, rgba(0, 255, 255, 0.1) 0%, rgba(0, 255, 255, 0.05) 100%);
   border-radius: 20px;
 }
 
 .placeholder-text {
   text-align: center;
-  color: #999;
+  color: #808080;
   z-index: 1;
 }
 
@@ -159,12 +165,12 @@
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: #666;
+  color: #b0b0b0;
 }
 
 .placeholder-text small {
   font-size: 0.9rem;
-  color: #999;
+  color: #808080;
 }
 
 .scroll-indicator {
@@ -182,17 +188,20 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: white;
-  color: #2d2d2d;
+  background-color: rgba(26, 26, 46, 0.8);
+  color: #e0e0e0;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
 }
 
 .scroll-indicator a:hover {
-  background-color: #d4c4b7;
-  color: white;
+  background-color: #00ffff;
+  color: #0d0d0d;
   transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 255, 255, 0.3), 0 0 20px rgba(0, 255, 255, 0.2);
 }
 
 @keyframes bounce {

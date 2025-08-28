@@ -11,9 +11,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #faf9f7;
-  color: #2d2d2d;
+  background: linear-gradient(135deg, #0d0d0d 0%, #1a1a2e 100%);
+  color: #e0e0e0;
   line-height: 1.6;
+  min-height: 100vh;
 }
 
 .App {
@@ -43,14 +44,14 @@ main {
   font-weight: 700;
   text-align: center;
   margin-bottom: 3rem;
-  color: #2d2d2d;
+  color: #ffffff;
   font-family: 'Playfair Display', serif;
 }
 
 .section-subtitle {
   font-size: 1.1rem;
   text-align: center;
-  color: #666;
+  color: #b0b0b0;
   margin-bottom: 4rem;
   max-width: 600px;
   margin-left: auto;
@@ -72,38 +73,44 @@ main {
 }
 
 .btn-primary {
-  background-color: #d4c4b7;
-  color: #2d2d2d;
+  background-color: #00ffff;
+  color: #0d0d0d;
 }
 
 .btn-primary:hover {
-  background-color: #c4b4a7;
+  background-color: #00e6e6;
   transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3);
 }
 
 .btn-secondary {
   background-color: transparent;
-  color: #2d2d2d;
-  border: 2px solid #d4c4b7;
+  color: #00ffff;
+  border: 2px solid #00ffff;
 }
 
 .btn-secondary:hover {
-  background-color: #d4c4b7;
+  background-color: #00ffff;
+  color: #0d0d0d;
   transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3);
 }
 
 /* Card Styles */
 .card {
-  background: white;
+  background: rgba(26, 26, 46, 0.8);
   border-radius: 12px;
   padding: 2rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 255, 255, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
 }
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 255, 255, 0.1);
+  border-color: rgba(0, 255, 255, 0.2);
 }
 
 /* Grid Layouts */
